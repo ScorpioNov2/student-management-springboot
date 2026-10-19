@@ -1,0 +1,45 @@
+# Project specific
+secret.md
+arch.md
+.env
+.env.*
+!.env.example
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+htmlcov/
+*.egg-info/
+
+# Django database and caches
+*.sqlite3
+*.db
+db.sqlite3
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Frontend / Node
+node_modules/
+dist/
+build/
+coverage/
+
+docs/

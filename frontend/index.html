@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="halloween">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление Студентами</title>
+    <link rel="icon" type="image/png" href="./assets/cats.jpg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="theme-frame-wrapper" id="theme-frame-container">
+
+        <!-- HEADER -->
+        <header class="main-header">
+            <div class="header-container">
+                <h1 class="header-title">Система Заявок Студентов</h1>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <section class="toolbar-section">
+                <div class="search-box">
+                    <input type="text" id="global-search-input" placeholder="Поиск...">
+                </div>
+                <div class="action-buttons">
+                    <button id="action-add-button" class="btn btn-success">Добавление</button>
+                    <button id="action-edit-button" class="btn btn-primary" disabled>Редактирование</button>
+                    <button id="action-delete-button" class="btn btn-danger" disabled>Удаление</button>
+                </div>
+            </section>
+
+            <section class="status-section">
+                <span id="total-students-badge" class="badge-info">Всего: 0 студентов</span>
+            </section>
+
+            <section class="table-container" id="table-component-container"></section>
+
+            <section class="pagination-container" id="pagination-component-container"></section>
+        </main>
+
+    </div>
+    <div id="modal-component-container" class="modal-overlay hidden"></div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
